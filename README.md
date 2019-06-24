@@ -1,6 +1,15 @@
 # node-cron-valid 描述
-基于 [node-cron](https://github.com/kelektiv/node-cron)，实现 corn 输入验证，中文提示
-
+   基于 [node-cron](https://github.com/kelektiv/node-cron)，实现 corn 输入验证，中文提示
+## 说明
+   ### 验证顺序 
+   秒-分-小时-周-天-月      -代表空格
+   ### 验证范围
+   秒  0-59
+   分  0-59
+ 小时  0-23
+ 星期  0-6 （允许输入英文简写）
+   天  1-31
+   月  1-12
 ## 调用方法
 ```javascript
 // 1. 引入node-cron-vaild.js
